@@ -6,7 +6,38 @@
 
 	<body class="page page-green">
 		<div class="page__wrapper">
-			{{> header/header }}
+
+			<header class="header">
+				<div class="layout layout__big">
+					<a href="/score-green.html" class="header__logo">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21 25" >
+							<path fill-rule="evenodd"
+							 d="M9.705,0.165 C4.693,0.337 0.529,4.185 0.048,9.095 C-0.050,10.077 0.007,11.028 0.182,11.939 L0.182,11.939 C0.182,11.939 0.198,12.046 0.250,12.250 C0.405,12.931 0.638,13.593 0.927,14.214 C1.936,16.564 4.269,20.498 9.503,24.777 C9.824,25.042 10.294,25.042 10.620,24.777 C15.854,20.503 18.187,16.570 19.201,14.208 C19.496,13.588 19.723,12.931 19.878,12.245 C19.925,12.046 19.946,11.934 19.946,11.934 L19.946,11.934 C20.065,11.324 20.127,10.698 20.127,10.056 C20.127,4.470 15.425,-0.034 9.705,0.165 ZM10.061,14.982 C7.362,14.982 5.174,12.829 5.174,10.173 C5.174,7.517 7.362,5.365 10.061,5.365 C12.761,5.365 14.949,7.517 14.949,10.173 C14.949,12.829 12.761,14.982 10.061,14.982 Z"/>
+						</svg>
+						<p><span>score</span><strong><i>' </i>it</strong></p>
+					</a>
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item is-active">
+								<a href='compare-green.html' class="header__link">Get Scores</a>
+							</li>
+							<li class="header__item">
+								<a href='search-green.html' class="header__link">Find Apartments</a>
+							</li>
+							<li class="header__item">
+								<a href="#places" class="header__link">My Favorites</a>
+							</li>
+							<li class="header__item">
+								<a href="score-green.html#contact" class="header__link">Contact Us</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
 			{{> startscreen/startscreen }}
 			{{> table/table }}
 
@@ -69,7 +100,7 @@
 		<script src="static/js/separate-js/slick.min.js"></script>
 
 		<script src="static/js/separate-js/common.js"></script>
-		<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKKD4QH9_7ZKa2T3btDAa5yFMHTrNsBys&callback=initMap"> </script>
 	</body>
 

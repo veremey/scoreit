@@ -1,29 +1,15 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>score'it</title>
-		<meta content="" name="description">
-		<meta content="" name="keywords">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<meta content="telephone=no" name="format-detection">
-		<meta name="HandheldFriendly" content="true">
-		
-		<link href="static/css/separate-css/slick.css" rel="stylesheet" type="text/css">
-		<link href="static/css/main.css" rel="stylesheet" type="text/css">
-		
-		
-		<link rel="icon" type="image/png" href="favicon.png">
+		{{> head/head head.defaults}}
 	</head>
 
-	<body class="page page-green">
+	<body class="page">
 		<div class="page__wrapper">
 
 			<header class="header">
 				<div class="layout layout__big">
-					<a href="/score-green.html" class="header__logo">
+					<a href="/score.html" class="header__logo">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21 25" >
 							<path fill-rule="evenodd"
 							 d="M9.705,0.165 C4.693,0.337 0.529,4.185 0.048,9.095 C-0.050,10.077 0.007,11.028 0.182,11.939 L0.182,11.939 C0.182,11.939 0.198,12.046 0.250,12.250 C0.405,12.931 0.638,13.593 0.927,14.214 C1.936,16.564 4.269,20.498 9.503,24.777 C9.824,25.042 10.294,25.042 10.620,24.777 C15.854,20.503 18.187,16.570 19.201,14.208 C19.496,13.588 19.723,12.931 19.878,12.245 C19.925,12.046 19.946,11.934 19.946,11.934 L19.946,11.934 C20.065,11.324 20.127,10.698 20.127,10.056 C20.127,4.470 15.425,-0.034 9.705,0.165 ZM10.061,14.982 C7.362,14.982 5.174,12.829 5.174,10.173 C5.174,7.517 7.362,5.365 10.061,5.365 C12.761,5.365 14.949,7.517 14.949,10.173 C14.949,12.829 12.761,14.982 10.061,14.982 Z"/>
@@ -36,23 +22,21 @@
 					<nav class="header__nav">
 						<ul class="header__list">
 							<li class="header__item">
-								<a href='compare-green.html' class="header__link">Get Scores</a>
+								<a href='compare.html' class="header__link">Get Scores</a>
 							</li>
 							<li class="header__item">
-								<a href='search-green.html' class="header__link">Find Apartments</a>
+								<a href='search.html' class="header__link">Find Apartments</a>
 							</li>
 							<li class="header__item">
 								<a href="#places" class="header__link">My Favorites</a>
 							</li>
 							<li class="header__item">
-								<a href="score-green.html#contact" class="header__link">Contact Us</a>
+								<a href="score.html#contact" class="header__link">Contact Us</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 			</header>
-
-
 
 			<div class="startscreen startscreen-tall">
 				<div class="layout layout__big">
@@ -111,82 +95,8 @@
 				</div>
 			</div>
 
-			
-			<div class="section places has-border" id="places"  >
-				<div class="layout layout__big">
-					<h2 class="title__section">Places</h2>
-					<div class="places__wrap">
-						<ul class="places__list">
-								<li class="places__item">
-									<a href="#" class="places__pic">
-										<img src="static/img/content/01.jpg" alt=Greenhouse Apartments class="places__img">
-									</a>
-									<p class="places__apartment">Apartment - 3 beds</p>
-									<h3 class="title__r">Greenhouse Apartments</h3>
-									<div class="places__row">
-										<p class="desc__r">from 500$</p>
-										<a href="#" class="places__link">Paris</a>
-									</div>
-								</li>
-								<li class="places__item">
-									<a href="#" class="places__pic">
-										<img src="static/img/content/02.jpg" alt=Avalon at mission bay class="places__img">
-									</a>
-									<p class="places__apartment">Apartment - 3 beds</p>
-									<h3 class="title__r">Avalon at mission bay</h3>
-									<div class="places__row">
-										<p class="desc__r">from 400$</p>
-										<a href="#" class="places__link">Marseille</a>
-									</div>
-								</li>
-								<li class="places__item">
-									<a href="#" class="places__pic">
-										<img src="static/img/content/03.jpg" alt=W Lake St &amp; Knox Ave S class="places__img">
-									</a>
-									<p class="places__apartment">Apartment - 3 beds</p>
-									<h3 class="title__r">W Lake St &amp; Knox Ave S</h3>
-									<div class="places__row">
-										<p class="desc__r">from 420$</p>
-										<a href="#" class="places__link">Rezé</a>
-									</div>
-								</li>
-								<li class="places__item">
-									<a href="#" class="places__pic">
-										<img src="static/img/content/04.jpg" alt=Blaisdell Avenue South class="places__img">
-									</a>
-									<p class="places__apartment">Apartment - 3 beds</p>
-									<h3 class="title__r">Blaisdell Avenue South</h3>
-									<div class="places__row">
-										<p class="desc__r">from 350$</p>
-										<a href="#" class="places__link">Nice</a>
-									</div>
-								</li>
-								<li class="places__item">
-									<a href="#" class="places__pic">
-										<img src="static/img/content/05.jpg" alt=Holmes Ave S Apartments  class="places__img">
-									</a>
-									<p class="places__apartment">Apartment - 3 beds</p>
-									<h3 class="title__r">Holmes Ave S Apartments </h3>
-									<div class="places__row">
-										<p class="desc__r">from 300$</p>
-										<a href="#" class="places__link">Vancouver</a>
-									</div>
-								</li>
-								<li class="places__item">
-									<a href="#" class="places__pic">
-										<img src="static/img/content/06.jpg" alt=Vue Apartments class="places__img">
-									</a>
-									<p class="places__apartment">Apartment - 3 beds</p>
-									<h3 class="title__r">Vue Apartments</h3>
-									<div class="places__row">
-										<p class="desc__r">from 630$</p>
-										<a href="#" class="places__link">Ottawa</a>
-									</div>
-								</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			{{> places/places places.np}}
+
 			<div class="section places has-border">
 				<div class="layout layout__big">
 					<h2 class="title__section">Other Products</h2>
@@ -324,7 +234,7 @@
 			</div>
 
 			<!-- contact -->
-			<div class="section contact" id="contact">
+			<div class="section contact" id="contact"  >
 				<div class="layout layout__big">
 					<h2 class="title__section">Contact Us</h2>
 					<div class="contact__content">
@@ -380,14 +290,13 @@
 					</div>
 				</div>
 			</div>
-			<footer class="footer ">
-				<p class="desc__r">All rights reserved - 2019</p>
-			</footer>		</div>
+			{{> footer/footer}}
+		</div>
 		<script src="static/js/separate-js/jQuery.min.js"></script>
 		<script src="static/js/separate-js/slick.min.js"></script>
 
 		<script src="static/js/separate-js/common.js"></script>
-		<script src="/static/js/main.js"></script>
+		<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
 
 	</body>
 

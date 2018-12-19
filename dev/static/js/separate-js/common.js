@@ -31,6 +31,36 @@ $(document).ready(function () {
 	});
 	/*-----------------------------------------------------------*/
 
+	/* --- go to contact section ---*/
+
+  var url_string = window.location.href
+  var url = new URL(url_string);
+  var urlArr = url_string.split('#');
+  var lastUrlParam = urlArr[urlArr.length - 1];
+  var beforeLastUrlParam = urlArr[urlArr.length - 2];
+
+  if(lastUrlParam == 'contact'){
+    (function() {
+      setTimeout(function() {
+        $('html,body').animate({scrollTop: $('#contact').offset().top}, 800);
+      }, 400)
+    })();
+  }
+	/* --- smooth scroll ---*/
+	$('a[href^="#"]').on('click',function (e) {
+    e.preventDefault();
+    var target = this.hash;
+    $target = $(target);
+    $('html, body').stop().animate({
+        'scrollTop':  $target.offset().top
+    }, 900, 'swing', function () {
+        window.location.hash = target;
+    });
+  });
+	/*-----------------------------------------------------------*/
+
+
+
 
 	$('.check__input').on('click', function(){
 		if($(this).prop('checked')){
