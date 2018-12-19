@@ -1,0 +1,76 @@
+.about
+	margin-bottom: 60px
+	&__gallery
+		width: 100%
+		display: grid
+		grid-auto-flow: row
+
+		grid-template-columns: auto auto auto auto auto
+		grid-template-rows: 206px 206px
+		grid-gap: 20px
+		font-size: 0
+		+r(1024)
+			grid-template-columns: auto auto auto
+			grid-template-rows: 206px 206px 206px 206px
+		+r(850)
+			grid-template-columns: auto auto auto
+			grid-template-rows: 206px 206px 206px
+		+r(650)
+			display: block
+
+	&__pic
+		position: relative
+		border-radius: 4px
+		overflow: hidden
+		+r(650)
+			width: 100%
+			padding-top: 50%
+			margin-bottom: 20px
+		&_w-2
+			grid-column-end: span 2
+		&_h-2
+			grid-row-end: span 2
+		&_w-2-lg
+			+r(1024)
+				grid-column-end: span 2
+		&_h-2-lg
+			+r(1024)
+				grid-row-end: span 2
+		&_w-1-lg
+			+r(1024)
+				grid-column-end: span 1
+		&_h-1-lg
+			+r(1024)
+				grid-row-end: span 1
+		&_w-2-md
+			+r(850)
+				grid-column-end: span 2
+		&_h-2-md
+			+r(850)
+				grid-row-end: span 2
+		&_w-1-md
+			+r(850)
+				grid-column-end: span 1
+		&_h-1-md
+			+r(850)
+				grid-row-end: span 1
+		&_w-2-sm
+			+r(650)
+				grid-column-end: span 2
+		&_h-2-sm
+			+r(650)
+				grid-row-end: span 2
+		&_w-1-sm
+			+r(650)
+				grid-column-end: span 1
+		&_h-1-sm
+			+r(650)
+				grid-row-end: span 1
+
+	&__img
+		+vcenter
+		min-height: 100%
+		min-width: 100%
+	.desc__r
+		font-size: 18px
+		line-height: 1.6666em

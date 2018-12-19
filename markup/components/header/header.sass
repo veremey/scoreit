@@ -1,0 +1,138 @@
+
+.header
+	position: relative
+	background-color: #fff
+	z-index: 1000
+	&__nav
+		+r(850)
+			// display: none
+			position: fixed
+			top: 0
+			left: 100%
+			bottom: 0
+			width: 100%
+			background-color: rgba(0, 0, 0, .9)
+			display: flex
+			justify-content: center
+			align-items: center
+			+tr(.4s)
+			&.is-active
+				left: 0
+	&__list
+		padding: 0
+		margin: 0
+		list-style-type: none
+		+r(850)
+			display: flex
+			flex-direction: column
+	&__item
+		display: inline-block
+		margin-left: 26px
+		border-bottom: 2px solid $n
+		+r(850)
+			display: block
+			width: 100%
+			height: 100%
+		&.is-active
+			border-bottom: 2px solid var(--color)
+			.header__link
+				color: var(--color)
+				+ob
+	&__link
+		display: block
+		line-height: 68px
+		color: #73716e
+		+tr(.4s)
+		+r(850)
+			color: #f0f8ff
+		&:hover
+			color: var(--color)
+	.layout
+		display: flex
+		justify-content: space-between
+	svg
+		display: inline-block
+		vertical-align: top
+		width: 21px
+		height: 25px
+		fill: var(--color)
+		+try(2px)
+	&__logo
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 13px 0
+		white-space: nowrap
+		p
+			letter-spacing: -0.08em
+			margin-left: 10px
+		span
+			font-size: 28px
+			color: #000
+			+or
+		strong
+			position: relative
+			font-size: 28px
+			color: var(--color)
+			+oxb
+
+.header__burger
+	position: absolute
+	top: 16px
+	right: 15px
+	display: inline-block
+	vertical-align: top
+	width: 40px
+	height: 40px
+	cursor: pointer
+	margin: auto
+	transition: all 0.3s ease-out
+	z-index: 1000
+	display: none
+	+r(850)
+		display: block
+	span
+		display: block
+		width: 40px
+		height: 5px
+		background-color: #000000
+		transition: all 0.3s ease-out
+		+try(18px)
+		z-index: 100
+		&::after
+			content: ' '
+			position: relative
+			display: block
+			top: 5px
+			width: 40px
+			height: 5px
+			background-color: #000000
+			transition-property: transform, top
+			transition-delay: 0s, 0.2s
+		&::before
+			position: relative
+			display: block
+			content: ' '
+			bottom: 10px
+			width: 40px
+			height: 5px
+			background-color: #000000
+			transition-property: transform, bottom
+			transition-delay: 0s, 0.2s
+	&.is-active
+		span
+			background-color: transparent
+			&::before
+				bottom: 0
+				transform: rotate(45deg)
+				transition-property: bottom, transform
+				transition-duration: 0.2s, 0.2s
+				transition-delay: 0s, 0.2s
+				background-color: #fff
+			&::after
+				top: -5px
+				transform: rotate(-45deg)
+				transition-duration: 0.2s, 0.2s
+				transition-property: top, transform
+				transition-delay: 0s, 0.2s
+				background-color: #fff

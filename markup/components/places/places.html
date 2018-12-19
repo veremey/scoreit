@@ -1,0 +1,23 @@
+
+<div class="section places {{#if mod}}{{mod}}{{/if}}">
+	<div class="layout layout__big">
+		<h2 class="title__section">{{title}}</h2>
+		<div class="places__wrap">
+			<ul class="places__list">
+				{{#each item}}
+					<li class="places__item">
+						<a href="#" class="places__pic">
+							<img src="static/img/content/{{img}}.jpg" alt={{title}} class="places__img">
+						</a>
+						<p class="places__apartment">Apartment - 3 beds</p>
+						<h3 class="title__r">{{title}}</h3>
+						<div class="places__row">
+							<p class="desc__r">from {{price}}$</p>
+							<a href="#" class="places__link">{{town}}</a>
+						</div>
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</div>

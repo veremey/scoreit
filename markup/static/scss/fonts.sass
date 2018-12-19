@@ -1,0 +1,42 @@
+
++font('opensans-extrabold-webfont', 'opensans-extrabold-webfont')
++font('opensans-bold-webfont', 'opensans-bold-webfont')
++font('opensans-regular-webfont', 'opensans-regular-webfont')
++font('opensans-light-webfont', 'opensans-light-webfont')
+
+=ol
+	font-family: 'opensans-light-webfont', Arial, sans-serif
+=or
+	font-family: 'opensans-regular-webfont', Arial, sans-serif
+=ob
+	font-family: 'opensans-bold-webfont', Arial, sans-serif
+=oxb
+	font-family: 'opensans-extrabold-webfont', Arial, sans-serif
+
+.desc
+	&__r
+		font-size: 18px
+		color: #44423e
+		+or
+
+.title
+	&__l
+		font-size: 24px
+		text-transform: capitalize
+		margin-bottom: 1em
+		+oxb
+	&__r
+		font-size: 18px
+		color: #44423e
+		+ob
+	&__section
+		font-size: 30px
+		margin-bottom: 1.2em
+		text-align: center
+		color: #44423e
+		+oxb
+
+.link
+	font-size: 18px
+	color: var(--color)
+	+tr(.4s)

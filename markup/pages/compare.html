@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+	<head>
+		{{> head/head head.defaults}}
+	</head>
+
+	<body class="page">
+		<div class="page__wrapper">
+			{{> header/header }}
+			{{> startscreen/startscreen }}
+			{{> table/table }}
+
+			<div id="simple-map"></div>
+			<script>
+	      var map;
+	      var image = '../static/img/content/marker-mini.png';
+	      function initMap() {
+	        map = new google.maps.Map(document.getElementById('simple-map'), {
+	          center: {lat: 46.855621, lng: 6.573552},
+	          zoom: 6,
+	          icon: image
+	        });
+		      var marker = new google.maps.Marker({
+				    position: {lat: 48.834806, lng: 2.331014},
+				    map: map,
+				    icon: image
+				  });
+		      var marker1 = new google.maps.Marker({
+				    position: {lat: 45.761401, lng: 4.835130},
+				    map: map,
+				    icon: image
+				  });
+		      var marseille = new google.maps.Marker({
+				    position: {lat: 43.338529, lng: 5.409566},
+				    map: map,
+				    icon: image
+				  });
+	      }
+	    </script>
+
+			{{> places/places places.ap}}
+			{{> enter/enter}}
+			{{> footer/footer}}
+		</div>
+		<script src="static/js/separate-js/jQuery.min.js"></script>
+		<script src="static/js/separate-js/slick.min.js"></script>
+
+		<script src="static/js/separate-js/common.js"></script>
+		<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKKD4QH9_7ZKa2T3btDAa5yFMHTrNsBys&callback=initMap"> </script>
+	</body>
+
+</html>

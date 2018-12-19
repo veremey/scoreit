@@ -1,0 +1,97 @@
+
+.generalize
+	&__wrap
+		overflow: auto
+		max-width: 100%
+		margin-bottom: 20px
+	&__table
+		table-layout: fixed
+		width: 100%
+		margin-bottom: 20px
+		text-align: center
+		min-width: 780px
+	&__row
+	&__city
+		font-size: 30px
+		margin-right: 60px
+		margin-bottom: 0
+		+oxb
+		+r(1024)
+			font-size: 22px
+			margin-right: 40px
+	&__area
+		padding: 0 30px
+		min-width: 400px
+		table
+			table-layout: fixed
+			width: 100%
+			min-width: 460px
+		tr
+			border-bottom: 1px solid #44423e
+		td
+			padding: 10px 0
+		.no-border
+			border-bottom: none
+			td
+				padding: 0
+				+r(850)
+					padding: 0 10px
+	&__cell
+		text-align: left
+	&__item
+		display: inline-block
+		width: 76px
+		height: 74px
+		text-align: center
+		line-height: 76px
+		font-size: 36px
+		color: #44423e
+		border-radius: 100%
+		+ob
+		+r(1024)
+			width: 50px
+			height: 50px
+			text-align: center
+			line-height: 50px
+			font-size: 28px
+		&.is-active
+			background-color: var(--color)
+			color: #fff
+	&__name
+		width: 25%
+		text-align: center
+		font-size: 18px
+	&__num
+		display: inline-block
+		vertical-align: top
+		width: 76px
+		height: 76px
+		border-radius: 100%
+		color: #44423e
+		text-align: center
+		line-height: 76px
+		font-size: 36px
+		&.is-active
+			background-color: var(--color)
+			color: #fff
+	&__show
+		margin-left: 60px
+	&__link
+		display: inline-block
+		vertical-align: top
+		height: 68px
+		width: 170px
+		padding: 0 26px
+		background-color: #757575
+		color: #fff
+		font-size: 24px
+		line-height: 64px
+		border-radius: 4px
+		text-align: center
+		+ob
+		+r(1024)
+			font-size: 18px
+			line-height: 32px
+			height: 34px
+			width: 100px
+
